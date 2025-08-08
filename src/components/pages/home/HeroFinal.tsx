@@ -24,7 +24,7 @@ export const HeroFinal = () => {
                             style={{ bottom: '9%', right: '-22%' }}
                             alt="doodle"
                         />
-                        <div className="flex gap-4 w-fit items-center md:mb-6">
+                        <div className="flex gap-4 w-fit items-center mb-6">
                             <div className="w-8 h-8 md:w-16 md:h-16 rounded-full bg-gray-200 overflow-hidden">
                                 <Image
                                     alt="Emanuel Cisterna perfil"
@@ -64,11 +64,7 @@ export const HeroFinal = () => {
 
                     <div className="xl:w-6/12 lg:w-6/12 w-full ml-auto mt-[50px] mb-[-10rem] xxl:mb-[-15rem] animate-slideInDownDelayed1">
                         <figure className="m-0 p-0">
-                            <img
-                                className="w-full h-auto max-w-full"
-                                src="https://sandbox-tailwind-template.netlify.app/assets/img/photos/devices3@2x.png"
-                                alt="Devices"
-                            />
+                            
                         </figure>
                     </div>
                 </div>
