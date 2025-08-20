@@ -45,7 +45,7 @@ export function AiChatPopup() {
       <DialogTrigger asChild>
         <Button size="lg" className="group relative z-50 flex items-center justify-center overflow-hidden text-wrap
               px-6 py-2 text-center font-semibold text-white shadow-md transition 
-             hover:scale-110 hover:shadow-xl text-lg bg-[#006fee] rounded-none"
+             hover:scale-110 hover:shadow-xl text-lg  bg-gradient-to-r from-[#006fee] to-[#0D25B9] rounded-none"
           style={{ clipPath: "polygon(0 0, 95% 0, 100% 100%, 5% 100%)" }}>
           <div className="width-full absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent
              via-white/20 to-transparent transition-transform duration-700 ease-in-out group-hover:translate-x-full"></div>

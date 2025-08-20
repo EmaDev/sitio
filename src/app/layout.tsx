@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { AppHeader } from '@/components/shared/header';
 import { AppFooter } from '@/components/shared/footer';
 import { Toaster } from '@/components/ui/toaster';
+import './globals.css';
+
 
 export const metadata: Metadata = {
   title: 'Emanuel Cisterna',

@@ -20,7 +20,9 @@ const nextConfig: NextConfig = {
     ],
     domains: [
       "firebasestorage.googleapis.com",
-      "i.pravatar.cc"
+      "i.pravatar.cc",
+      "sandbox-tailwind-template.netlify.app",
+      "astrolus-premium.netlify.app"
     ],
   },
 };

@@ -5,13 +5,14 @@ interface Props {
     link: string;
     title: string;
     icon?: any;
+    className?: string;
 }
-export const AnimatedButton = ({link, title, icon}:Props) => {
+export const AnimatedButton = ({link, title, icon, className}:Props) => {
     return (
         <Link
-            className="group relative z-50 flex items-center justify-center overflow-hidden text-wrap
+            className={`group relative z-50 flex items-center justify-center overflow-hidden text-wrap
               px-6 py-2 text-center text-md font-semibold text-white shadow-md transition 
-             hover:scale-110 hover:shadow-xl sm:text-xl bg-[#006fee]"
+             hover:scale-110 hover:shadow-xl sm:text-xl  bg-[#006fee] ${className}`}
             rel="noopener noreferrer"
             target="_blank"
             title="Contactar a Emanuel Cisterna"

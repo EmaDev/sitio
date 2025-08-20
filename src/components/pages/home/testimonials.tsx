@@ -37,6 +37,7 @@ export function Testimonials() {
             Lo que otros dicen de mi trabajo.
           </p>
         </div>
+        
         <Carousel className="w-full max-w-4xl mx-auto" opts={{ loop: true }} setApi={setApi}>
           <CarouselContent>
             {TESTIMONIAL.map((testimonial, index) => (
@@ -63,8 +64,8 @@ export function Testimonials() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className='hidden md:flex'/>
+          <CarouselNext className='hidden md:flex'/>
            <div className="flex justify-center gap-2 mt-6">
             {testimonials.map((_, index) => (
               <button

@@ -1,4 +1,9 @@
-import type {Config} from 'tailwindcss';
+import type { Config } from 'tailwindcss';
+import plugin from 'tailwindcss/plugin';
+
+const delays = [
+  0, 300, 600, 900, 1200, 1300, 1500, 1600, 1800, 2100, 2400, 3000, 3300,
+] as const;
 
 export default {
   darkMode: ['class'],
@@ -88,22 +93,33 @@ export default {
             height: '0',
           },
         },
-        slideInDown: {
-          '0%': { transform: 'translateY(-100%)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+        'fadeIn': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        'slideInDown': {
+          '0%': { opacity: '0', transform: 'translate3d(0, -20px, 0)' },
+          '100%': { opacity: '1', transform: 'translate3d(0, 0, 0)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'slideInDown': 'slideInDown 0.7s ease forwards',
-        'slideInDownDelayed1': 'slideInDown 0.7s ease 0.6s forwards',
-        'slideInDownDelayed2': 'slideInDown 0.7s ease 1.3s forwards',
-        'slideInDownDelayed3': 'slideInDown 0.7s ease 1.6s forwards',
-        'slideInDownDelayed4': 'slideInDown 0.7s ease 2.1s forwards',
-        'slideInDownDelayed5': 'slideInDown 0.7s ease 2.4s forwards',
+        'fadeIn': 'fadeIn 0.7s ease both',
+        'slideInDown': 'slideInDown 0.7s ease both',
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+    plugins: [
+    plugin(({ addUtilities }) => {
+      // NOTE: In Tailwind v3+, the 2nd arg to addUtilities is an options object (no variants array).
+      // Typing the utilities as a simple Record avoids TS complaints.
+      const utils: Record<string, Record<string, string>> = {};
+      delays.forEach((ms) => {
+        utils[`.animate-delay-${ms}`] = { 'animation-delay': `${ms}ms` };
+      });
+      addUtilities(utils); // ✅ no second argument
+    }),
+  ],
+  important: false,
 } satisfies Config;

@@ -4,6 +4,7 @@ import { Testimonials } from '@/components/pages/home/testimonials';
 import { Projects } from '@/components/pages/home/projects';
 import { HeroFinal } from '@/components/pages/home/HeroFinal';
 
+
 export default function Home() {
   return (
     <div className="">

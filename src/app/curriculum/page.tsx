@@ -144,7 +144,7 @@ export default function CurriculumPage() {
                                     ))}
                                 </ul>
                             </nav>
-                            <Button asChild className="w-full mt-8">
+                            <Button asChild className="w-full mt-8 bg-gradient-to-r from-[#FD6585] to-[#0D25B9]">
                                 <a href="/curriculum.pdf" download="Emanuel Cisterna.pdf">
                                     <Download className="mr-2 h-4 w-4" />
                                     Descargar CV

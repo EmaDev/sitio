@@ -6,7 +6,7 @@ import { formatExperienceTime } from '@/lib/utils';
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="w-full py-12 md:py-24 lg:py-3 relative">
+    <section id="experience" className="w-full py-20 lg:py-3 relative">
       <div aria-hidden="true" className="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-80">
         <div className="h-56 bg-gradient-to-br from-primary to-purple-400 blur-[160px] dark:from-blue-700"></div>
         <div className="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[160px] dark:to-indigo-600"></div>
@@ -23,7 +23,8 @@ export function ExperienceTimeline() {
           <ul className="space-y-12">
             {EXPERIENCE.slice(0, 3).map((item, index) => (
               <li key={index} className="relative pl-12">
-                <div className="absolute left-0 top-1.5 flex h-10 w-10 items-center justify-center rounded-full bg-primary ring-8 ring-background">
+                <div className="absolute left-0 top-1.5 flex h-10 w-10 items-center justify-center 
+                rounded-full bg-[#0D25B9] ring-8 ring-background">
                   <item.icon className="h-5 w-5 text-primary-foreground" />
                 </div>
                 <Card>
@@ -37,7 +38,7 @@ export function ExperienceTimeline() {
                       }
                     </div>
                     <CardTitle>{item.title}</CardTitle>
-                    <CardDescription className="text-accent font-medium">{item.company}</CardDescription>
+                    <CardDescription className="font-medium text-[#FD6585]">{item.company}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-base font-normal text-gray-500 dark:text-gray-400">
