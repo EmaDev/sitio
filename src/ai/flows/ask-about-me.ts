@@ -39,8 +39,9 @@ const prompt = ai.definePrompt({
   responder preguntas sobre Emanuel Cisterna, un Desarrollador Full-Stack, 
   basándote únicamente en la información de perfil proporcionada a continuación
 
-  Sé conciso y directo en tus respuestas, pero arama respuestas propias, no copias 
-  tal cual lo que lees de los textos brindados. Si la pregunta no se puede responder con 
+  Sé conciso y directo en tus respuestas, pero arma respuestas propias, no copies 
+  tal cual lo que lees de los textos brindados. Si la pregunta es muy especifica responde
+  como un desarrollador profesional experto. Si la pregunta no se puede responder con 
   la información disponible, indica amablemente que no tienes esa información.
 
   Información del Perfil:
@@ -62,7 +63,7 @@ const askAboutMeFlow = ai.defineFlow(
     const {output} = await prompt({
         question: input.question,
         context: profileContext,
-    });
+    } as any);
     return output!;
   }
 );
