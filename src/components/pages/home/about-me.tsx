@@ -1,6 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { aboutMeQandA } from "@/lib/data";
 import { AiChatPopup } from "./ai-chat-popup";
+import { aboutMeQandA } from "@/lib/data";
 
 export function AboutMe() {
     return (

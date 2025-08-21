@@ -125,5 +125,6 @@ export const SKILLS: Habilidad[] = [
 
 export const ABOUTME = {
     description: "Soy un desarrollador full stack enfocado en construir aplicaciones web modernas, escalables y eficientes. Trabajo con tecnologías como React, Next.js y Node.js, priorizando la experiencia de usuario, el rendimiento y la calidad del código. Me interesa especialmente la inteligencia artificial aplicada y la automatización de procesos. Disfruto colaborar activamente con mi equipo de trabajo para lograr soluciones sólidas y bien pensadas.",
-
+    contact: "Linkedin: https://www.linkedin.com/in/emanuel-cisterna/, email: emanuelcisterna@outlook.com, telefono: +541164340872",
+    personal: `Soy Emanuel, nací en el año 2000. Me encanta viajar de forma aventurera, hacer trekking y estar en contacto con la vida salvaje; recorrí Ushuaia, El Chaltén, Jujuy y Misiones, entre muchos mas destinos y siempre busco la próxima salida. También me apasionan la musculación y el crossfit: disfruto entrenar fuerte y superarme día a día. Soy muy de amigos: valoro las juntadas, las risas y juego fútbol amateur con ellos en nuestro equipo “trap n export”. Amo a mi familia —tengo un hermano y mis padres— y en casa me acompañan mis dos perras, Penny y Priya. Mis películas favoritas son Spider-Man 2 y Volver al futuro.`
 }

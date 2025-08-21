@@ -14,8 +14,8 @@ export function AiChatPopup() {
   const [isOpen, setIsOpen] = useState(false);
 
   const examplePrompts = [
-    "¿Cuál es el proyecto más desafiante en el que ha trabajado John Doe?",
-    "Resume la experiencia de John en el desarrollo Frontend.",
+    "¿Cuáles son los proyectos más desafiante en el que ha trabajado Emanuel?",
+    "Resume la experiencia de Emanuel en el desarrollo Frontend.",
     "¿Qué tecnologías utilizó en el proyecto 'Plataforma E-commerce'?",
   ];
 
@@ -53,7 +53,7 @@ export function AiChatPopup() {
           Consultar a la IA
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[725px] md:p-12">
+      <DialogContent className="sm:max-w-[725px] md:p-12 max-h-[95vh] overflow-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-2xl">
             <Sparkles className="text-primary h-6 w-6" />
@@ -97,7 +97,7 @@ export function AiChatPopup() {
           )}
 
           {answer && (
-            <div className="p-4 bg-secondary/50 rounded-md space-y-2">
+            <div className="p-4 bg-secondary/50 rounded-md space-y-2 overflow-auto h-48">
               <p className="font-semibold text-foreground">Respuesta:</p>
               <p className="whitespace-pre-wrap text-foreground/90">{answer}</p>
             </div>

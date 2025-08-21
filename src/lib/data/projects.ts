@@ -36,6 +36,7 @@ export interface IProject {
     id: string;
     title: string;
     type: string;
+    difficult: "high"|"low"|"mid";
     cover_image: StaticImageData;
     date: Date;
     color: string;
@@ -58,6 +59,7 @@ export const PROJECTS: IProject[] = [
         id: "ecommerce-gastronomia",
         title: "Plataforma digital para gastronomía: pedidos online + panel de gestión",
         type: `Sitio web`,
+        difficult: "high",
         cover_image: miniatura_ecommerce,
         date: new Date("2024-05-01"),
         color: "#d1965e",
@@ -129,6 +131,7 @@ export const PROJECTS: IProject[] = [
         type: "Aplicacion",
         title: "Aplicación Prode Qatar 2022",
         date: new Date("2022-09-01"),
+        difficult: "mid",
         cover_image: miniatura_prode,
         color: "#67af8d",
         images: [
@@ -174,6 +177,7 @@ Todo esto en una interfaz moderna, clara y adaptable a cualquier dispositivo mó
         type: "microservicio",
         title: "Microservicio de notificaciones",
         color: "#2a8ee5",
+        difficult: "mid",
         cover_image: miniatura_notificaciones,
         date: new Date("2023-08-01"),
         images: [
@@ -224,6 +228,7 @@ Sin embargo, ningún desarrollo está completo sin una buena anécdota: durante 
         type: "Aplicacion",
         cover_image: miniatura_fono,
         date: new Date("2022-11-02"),
+        difficult: "high",
         images: [
             fono1,
             fono2,

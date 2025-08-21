@@ -6,12 +6,12 @@ import { formatExperienceTime } from '@/lib/utils';
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="w-full py-20 lg:py-3 relative">
+    <section id="experience" className="w-full py-24 lg:py-3 relative">
       <div aria-hidden="true" className="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-80">
         <div className="h-56 bg-gradient-to-br from-primary to-purple-400 blur-[160px] dark:from-blue-700"></div>
         <div className="h-32 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[160px] dark:to-indigo-600"></div>
       </div>
-      <div className="container px-4 md:px-6 m-auto">
+      <div className="container p-4 md:px-6 m-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Experiencia Laboral</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">

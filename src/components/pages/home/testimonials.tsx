@@ -2,8 +2,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { testimonials } from '@/lib/data';
+import { Avatar } from '@/components/ui/avatar';
 import { TESTIMONIAL } from '@/lib/data/testimonial';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -66,18 +65,7 @@ export function Testimonials() {
           </CarouselContent>
           <CarouselPrevious className='hidden md:flex'/>
           <CarouselNext className='hidden md:flex'/>
-           <div className="flex justify-center gap-2 mt-6">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => scrollTo(index)}
-                className={`h-2 w-2 rounded-full transition-colors ${
-                  current -1 === index ? 'bg-primary' : 'bg-muted-foreground/30'
-                }`}
-                aria-label={`Ir al testimonio ${index + 1}`}
-              />
-            ))}
-          </div>
+           
         </Carousel>
       </div>
     </section>

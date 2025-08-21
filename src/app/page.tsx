@@ -6,6 +6,7 @@ import { HeroFinal } from '@/components/pages/home/HeroFinal';
 
 
 export default function Home() {
+
   return (
     <div className="">
       <HeroFinal />

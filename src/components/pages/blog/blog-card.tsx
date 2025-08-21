@@ -3,9 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Camera, ExternalLink, MapPin } from 'lucide-react';
-import { format } from 'date-fns';
-import { es } from 'date-fns/locale';
-import { IBlogPost } from '@/lib/data/BlogPost';
+import { IBlogPost } from '@/lib/interfaces/BlogPost';
 import { convertTimestampToDate } from '@/services/helpers';
 import { LazyMap } from './LazyMap';
 

@@ -15,7 +15,7 @@ export const HeroFinal = () => {
         <section className="wrapper image-wrapper bg-full bg-image 
         bg-overlay bg-overlay-light-600 xl:[background-size:100%] 
         bg-[center_center] bg-no-repeat bg-scroll relative z-0  
-        before:block before:absolute  before:w-full before:h-full before:left-0 before:top-0 "
+        before:block before:absolute  before:w-full before:h-full before:left-0 before:top-0"
             style={{ backgroundImage: `url(${bgImage})` }}>
 
             <div className='container w-4/5 xxl:w-2/3 h-[70vh] m-auto md:grid grid-cols-2 gap-12'>
@@ -28,7 +28,7 @@ export const HeroFinal = () => {
                                 style={{ top: '-9%', left: '-6%' }}
                                 alt="doodle"
                             />
-                            <div className="hidden md:flex gap-4 w-fit items-center mb-6 animate-slideInDown animate-delay-1300">
+                            <div className="hidden 2xl:flex gap-4 w-fit items-center mb-6 animate-slideInDown animate-delay-1300">
                                 <div className="w-8 h-8 md:w-16 md:h-16 rounded-full bg-gray-200 overflow-hidden">
                                     <Image
                                         alt="Emanuel Cisterna perfil"
@@ -57,7 +57,7 @@ export const HeroFinal = () => {
                             </h1>
 
                             <div className='hidden md:block'>
-                                <p className='text-black lead !text-[1.2rem] !leading-[1.5] !font-normal !mb-7 animate-slideInDown animate-delay-1600'>
+                                <p className='text-black lead 2xl!text-[1.2rem] !leading-[1.5] !font-normal !mb-7 animate-slideInDown animate-delay-1600'>
                                     Un apasionado desarrollador de software con experiencia en la creación de aplicaciones web modernas y escalables. Me encanta resolver problemas complejos y aprender nuevas tecnologías.
                                 </p>
 

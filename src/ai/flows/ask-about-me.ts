@@ -8,8 +8,8 @@
  */
 
 import {ai} from '@/ai/genkit';
+import { professionalProfileData } from '@/lib/data/ia';
 import {z} from 'genkit';
-import { professionalProfileData } from '@/lib/data';
 
 const AskAboutMeInputSchema = z.object({
   question: z
@@ -35,9 +35,13 @@ const prompt = ai.definePrompt({
   name: 'askAboutMePrompt',
   input: {schema: AskAboutMeInputSchema},
   output: {schema: AskAboutMeOutputSchema},
-  prompt: `Eres un asistente de IA amigable y profesional. Tu tarea es responder preguntas sobre John Doe, un Desarrollador Full-Stack, basándote únicamente en la información de perfil proporcionada a continuación.
+  prompt: `Eres un asistente de IA amigable y profesional. Tu tarea es 
+  responder preguntas sobre Emanuel Cisterna, un Desarrollador Full-Stack, 
+  basándote únicamente en la información de perfil proporcionada a continuación
 
-  Sé conciso y directo en tus respuestas. Si la pregunta no se puede responder con la información disponible, indica amablemente que no tienes esa información.
+  Sé conciso y directo en tus respuestas, pero arama respuestas propias, no copias 
+  tal cual lo que lees de los textos brindados. Si la pregunta no se puede responder con 
+  la información disponible, indica amablemente que no tienes esa información.
 
   Información del Perfil:
   \`\`\`json
