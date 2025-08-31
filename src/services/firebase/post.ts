@@ -1,6 +1,6 @@
 import { collection, query, where, getDocs, getFirestore, setDoc, doc, addDoc, orderBy } from "firebase/firestore";
 import { app } from "./config";
-import { Post } from "../../types/Post";
+import { IBlogPost } from "@/lib/interfaces/BlogPost";
 const db = getFirestore(app);
 
 
@@ -17,7 +17,7 @@ export const getPostsByUser = async (userName: string, album: string) => {
         }
 
         const querySnapshot = await getDocs(q);
-        const posts: Post[] = [];
+        const posts: IBlogPost[] = [];
 
         querySnapshot.forEach((doc) => {
             posts.push({
@@ -48,7 +48,7 @@ export const getPostsByUser = async (userName: string, album: string) => {
     }
 }
 
-export const addPostByUser = async (data: Post, userName: string) => {
+export const addPostByUser = async (data: IBlogPost, userName: string) => {
     try {
         const resp = await addDoc(collection(db, "viajes-app", userName, "post"), data);
         console.log(resp)

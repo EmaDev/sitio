@@ -50,9 +50,9 @@ export function AppHeader() {
               </Button>
             </SheetTrigger>
           </div>
-          <SheetContent side="left">
+          <SheetContent side="top">
             <div className="flex flex-col pt-12  space-y-4">
-              <nav className="flex flex-col space-y-4">
+              <nav className="flex flex-col space-y-4 text-center">
                 <Link className="text-lg font-medium hover:text-[#FD6585] transition-colors" href="/proyectos" prefetch={false} onClick={closeSheet}>
                   Proyectos
                 </Link>

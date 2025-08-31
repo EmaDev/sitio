@@ -6,6 +6,7 @@ import { Camera, ExternalLink, MapPin } from 'lucide-react';
 import { IBlogPost } from '@/lib/interfaces/BlogPost';
 import { convertTimestampToDate } from '@/services/helpers';
 import { LazyMap } from './LazyMap';
+import { ImageContainer } from './ImageContainer';
 
 interface BlogCardProps {
   post: IBlogPost;
@@ -16,16 +17,16 @@ export function BlogCard({ post }: BlogCardProps) {
 
   return (
     <Card className="flex flex-col h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-card/80 backdrop-blur-sm border-border/20">
-      <div className="relative">
+      <ImageContainer src={post.image}>
         <Image
           src={post.image}
-          width={600}
-          height={800}
+          width={1000}
+          height={1000}
           alt={post.title}
           className="w-full h-auto object-cover aspect-[3/4]"
           data-ai-hint="travel landscape"
         />
-      </div>
+      </ImageContainer>
       <CardContent className="p-4 flex-grow flex flex-col">
         <p className="text-sm">{convertTimestampToDate(post.date)}</p>
         <h3 className="text-lg font-black mb-2">{post.title}</h3>

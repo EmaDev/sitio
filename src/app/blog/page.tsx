@@ -3,12 +3,14 @@ import { getUserByName } from '@/services/firebase/users';
 import { getPostsByUser } from '@/services/firebase/post';
 import Header from '@/components/pages/blog/Header';
 
+export const dynamic = 'force-dynamic';
 export default async function BlogPage({ searchParams }: any) {
 
   const { album } = searchParams;
   const userData: any = await getUserByName("emanuel")
   const post: any = await getPostsByUser("emanuel", album || "");
 
+  console.log(post)
   return (
     <div className="container px-4 md:px-6 py-8 md:py-12 m-auto">
 

@@ -7,8 +7,26 @@ import './globals.css';
 
 
 export const metadata: Metadata = {
-  title: 'Emanuel Cisterna',
-  description: 'Portfolio de Emanuel Cisterna, desarrollador web especializado en React e inteligencia artificial.',
+  title: 'Emanuel Cisterna - Desarrollador web especializado en React e inteligencia artificial.',
+  description: 'Portafolio de Emanuel Cisterna, desarrollador web especializado en React e inteligencia artificial.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    url: 'https://emanuelcisterna.com',
+    title: 'Emanuel Cisterna — Desarrollador Web',
+    description:
+      'Portafolio de Emanuel Cisterna, desarrollador web especializado en React e inteligencia artificial.',
+    siteName: 'Emanuel Cisterna',
+    images: ['/og-image.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Emanuel Cisterna — Desarrollador Web',
+    description:
+      'Portafolio de Emanuel Cisterna, desarrollador web especializado en React e inteligencia artificial.',
+    images: ['/og-image.jpg'],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({

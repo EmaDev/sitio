@@ -1,7 +1,7 @@
 import { AnimatedButton } from '@/components/ui/AnimatedButton';
 import { Testimonial } from './Testimonial';
 import Image from 'next/image';
-import avatar from "../../../assets/hero.jpg";
+import avatar from "../../../assets/hero.png";
 import devices from "../../../assets/device3.png";
 
 const devicesImg = 'https://sandbox-tailwind-template.netlify.app/assets/img/photos/devices3.png'
