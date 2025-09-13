@@ -5,7 +5,8 @@ type Educacion = {
     time: string;
     skills: string[];
     type: "UNIVERSITY" | "OTHER",
-    institution?: string
+    institution?: string,
+    description?: string; 
 };
 
 type Habilidad = {
@@ -19,7 +20,11 @@ export const EDUCATION: Educacion[] = [
         time: "Desde 2021",
         skills: ["Java", "Kotlin", "Android", "Diseño de apps", "Bases de datos", "APIs REST"],
         type: "UNIVERSITY",
-        institution: "Universidad nacional de la matanza"
+        institution: "Universidad nacional de la matanza",
+        description: `Formación enfocada en el diseño y desarrollo de aplicaciones móviles multiplataforma, con un fuerte componente en arquitectura de
+software, bases de datos, optimización de rendimiento y experiencia de usuario (UX). Durante la carrera trabajé en proyectos
+aplicados que integran APIs, servicios en la nube y patrones de diseño, lo que me permitió adquirir una base técnica robusta en
+programación e informática y potenciarla con prácticas colaborativas que simulan entornos de trabajo reales.`
     },
     {
         title: "Principios SOLID y Clean Code - DevTalles",
@@ -115,16 +120,13 @@ export const SKILLS: Habilidad[] = [
     {
         categoria: "Inteligencia Artificial",
         items: [
-            "Integración con modelos LLM (OpenIA, Gemini)",
-            "Automatización de respuestas inteligentes",
-            "Desarrollo de asistentes con IA generativa",
-            "Exploración de casos de uso con IA aplicada"
+            "Integración con modelos LLM (OpenIA, Gemini), Automatización de respuestas inteligentes, Desarrollo de asistentes con IA generativa, Exploración de casos de uso con IA aplicada"
         ]
     }
 ];
 
 export const ABOUTME = {
-    description: "Soy un desarrollador full stack enfocado en construir aplicaciones web modernas, escalables y eficientes. Trabajo con tecnologías como React, Next.js y Node.js, priorizando la experiencia de usuario, el rendimiento y la calidad del código. Me interesa especialmente la inteligencia artificial aplicada y la automatización de procesos. Disfruto colaborar activamente con mi equipo de trabajo para lograr soluciones sólidas y bien pensadas.",
+    description: "Soy un desarrollador Full Stack con +4 años de experiencia creando aplicaciones web y móviles de alto impacto. Cuento con amplios conocimientos en React, Next.js, Node.js y React Native, con historial comprobado en proyectos que superaron las 70k descargas y 20k usuarios activos. Me tocó trabajar optimizando aplicaciones que pasaron de calificaciones negativas a superar las 4.2 estrellas, liderado desarrollos para clientes enterprise (YPF Ruta, Cencosud) y diseñado una plataforma multi-tenant con IA avanzada (Claude, Gemini) integrada a canales como WhatsApp, Telegram y WebChat. Disfruto colaborar activamente con mi equipo de trabajo para lograr soluciones sólidas y bien pensadas, convencido de que la innovación y el trabajo en conjunto son la clave para proyectos exitosos.",
     contact: "Linkedin: https://www.linkedin.com/in/emanuel-cisterna/, email: emanuelcisterna@outlook.com, telefono: +541164340872",
     personal: `Soy Emanuel, nací en el año 2000. Me encanta viajar de forma aventurera, hacer trekking y estar en contacto con la vida salvaje; recorrí Ushuaia, El Chaltén, Jujuy y Misiones, entre muchos mas destinos y siempre busco la próxima salida. También me apasionan la musculación y el crossfit: disfruto entrenar fuerte y superarme día a día. Soy muy de amigos: valoro las juntadas, las risas y juego fútbol amateur con ellos en nuestro equipo “trap n export”. Amo a mi familia —tengo un hermano y mis padres— y en casa me acompañan mis dos perras, Penny y Priya. Mis películas favoritas son Spider-Man 2 y Volver al futuro.`
 }

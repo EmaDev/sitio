@@ -3,11 +3,9 @@ import { Testimonial } from './Testimonial';
 import Image from 'next/image';
 import avatar from "../../../assets/hero.png";
 import devices from "../../../assets/device3.png";
+import { ContactModal } from './contact-modal';
 
-const devicesImg = 'https://sandbox-tailwind-template.netlify.app/assets/img/photos/devices3.png'
-const devicesImg2x = 'https://sandbox-tailwind-template.netlify.app/assets/img/photos/devices3.png'
 const bgImage = 'https://sandbox-tailwind-template.netlify.app/assets/img/photos/bg23.png'
-
 
 
 export const HeroFinal = () => {
@@ -64,15 +62,11 @@ export const HeroFinal = () => {
                                 <div
                                     className='flex gap-6 justify-center lg:!justify-start xl:!justify-start animate-slideInDown animate-delay-1800'
                                 >
-                                    <AnimatedButton
-                                        link="/contacto"
-                                        title="Contacto"
-                                        className='bg-gradient-to-r from-[#FD6585] to-[#0D25B9] px-12'
-                                    />
+                                    <ContactModal/>
                                     <AnimatedButton
                                         link="https://www.linkedin.com/in/emanuel-cisterna/"
                                         title="Linkedin"
-                                        className='bg-[#0D25B9] px-12'
+                                        className='bg-[#0D25B9] px-12 w-[180px]'
                                     />
                                 </div>
                             </div>

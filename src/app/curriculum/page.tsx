@@ -75,7 +75,8 @@ export default function CurriculumPage() {
                                                 <p className="text-sm text-muted-foreground">{formatExperienceTime(job.time).time}</p>
                                             </div>
                                             <p className="text-md italic text-foreground/80">{job.title}</p>
-                                            <p className="mt-2 text-sm text-foreground/70 leading-relaxed">{job.description}</p>
+                                            
+                                            <p className="mt-2 text-sm text-foreground/70 leading-relaxed pl-4" dangerouslySetInnerHTML={{ __html: job.description }} />
                                         </div>
                                     ))}
                                 </section>
@@ -93,6 +94,7 @@ export default function CurriculumPage() {
                                             <p className="text-md italic text-foreground/80">{
                                                 edu.institution ? edu.title : edu.skills.join(", ")
                                             }</p>
+                                            <p className="mt-2 text-sm text-foreground/70 leading-relaxed pl-4">{edu.description}</p>
                                         </div>
                                     ))}
                                     <h2 className="text-lg font-bold uppercase tracking-widest border-b border-foreground/30 pb-2 mb-4 font-serif">

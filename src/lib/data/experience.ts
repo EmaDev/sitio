@@ -34,7 +34,16 @@ export const EXPERIENCE: IExperience[] = [
             "Mejoras UX y conversión de clientes",
             "Descarga de pólizas desde la app",
         ],
-        description: "Desarrollador frontend enfocado en aplicaciones móviles y web. Desarrollo de una app híbrida para iOS y Android utilizando Ionic y Tailwind CSS, permitiendo a los usuarios gestionar sus pólizas de seguro, reportar siniestros y acceder a documentación clave. También participo en el desarrollo de módulos web utilizando React.js para paneles administrativos y funcionalidades internas. Adicionalmente, estoy involucrado en tareas de investigación y desarrollo en IA con OpenIA y Gemini, explorando casos de uso como automatización de respuestas, generación de contenido y asistentes inteligentes dentro de los productos de la empresa."
+        description: `
+        <li>Optimicé una app híbrida (Ionic + Tailwind) que pasó de pésima calificación a superar las 4.2 estrellas, alcanzando +20k usuarios
+        activos.</li>
+        <li>Desarrollé módulos web en React.js para paneles administrativos y funcionalidades internas.</li>
+        <li>Implementé mejoras de performance que redujeron los tiempos de carga en un gran porcentaje, aumentando la retención de
+        usuarios.</li>
+        <li>Participé en proyectos con clientes corporativos (YPF Ruta, Cencosud), garantizando escalabilidad y calidad en producción.</li>
+        <li>Investigación y desarrollo en IA aplicada: integración de modelos LLM (OpenAI, Gemini) para asistentes inteligentes y
+        automatización de respuestas.</li>
+        `
     },
     {
         title: "Full Stack especializado en React Native y Node.js",
@@ -59,7 +68,13 @@ export const EXPERIENCE: IExperience[] = [
             "Testing con Detox y Jest",
             "Scrum y trabajo en equipo",
         ],
-        description: "Desarrollador full stack especializado en React Native y Node.js. Construcción de aplicaciones móviles para Android y iOS utilizando React Native. Backend basado en microservicios con Node.js, Express y MongoDB. Implementación de testing unitario y de UI con Jest y Detox. Integración de servicios externos como APIs, JWTs, Firebase, notificaciones push y mapas. Manejo de estados con Redux, Context API y Zustand."
+        description: `
+        <li>Desarrollé una app móvil con +70k descargas y +6k usuarios concurrentes, asegurando estabilidad bajo alta demanda.</li>
+        <li>Backend basado en microservicios (Node.js, Express, MongoDB) con integración de APIs externas, JWT, Firebase y notificaciones
+        push.</li>
+        <li>Testing unitario y de UI con Jest y Detox, aumentando la cobertura en más del 80%.</li>
+        <li>Manejo de estado avanzado con Redux, Context API y Zustand.</li>
+        `
     },
     {
         title: "Web Developer",
@@ -85,7 +100,14 @@ export const EXPERIENCE: IExperience[] = [
             "Pasarelas de pago integradas",
             "Documentación y plantillas PDF",
         ],
-        description: "Desarrollador web para sistemas ERP utilizando Java, Spring e Hibernate. Integración de pasarelas de pago como Mercado Pago y Decidir. Desarrollo de interfaces atractivas con HTML, CSS, Bootstrap y jQuery. Pruebas unitarias con JUnit y Mockito. Documentación técnica y capacitación de usuarios."
+        description: 
+        `
+        <li>Desarrollo de sistemas ERP con Java, Spring e Hibernate.</li>
+        <li>Integración de pasarelas de pago (Mercado Pago, Decidir).</li>
+        <li>Creación de interfaces con HTML, CSS, Bootstrap, jQuery.</li>
+        <li>Pruebas unitarias con JUnit y Mockito.</li>
+        <li>Capacitación de usuarios y documentación técnica.</li>
+        `
     },
     {
         title: "Programador Freelance",
