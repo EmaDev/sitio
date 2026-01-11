@@ -22,7 +22,8 @@ const nextConfig: NextConfig = {
       "firebasestorage.googleapis.com",
       "i.pravatar.cc",
       "sandbox-tailwind-template.netlify.app",
-      "astrolus-premium.netlify.app"
+      "astrolus-premium.netlify.app",
+      "images.unsplash.com"
     ],
   },
 };

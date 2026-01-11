@@ -36,7 +36,7 @@ export interface IProject {
     id: string;
     title: string;
     type: string;
-    difficult: "high"|"low"|"mid";
+    difficult: "high" | "low" | "mid";
     cover_image: StaticImageData;
     date: Date;
     color: string;
@@ -51,6 +51,8 @@ export interface IProject {
         html?: any
     }
     images: StaticImageData[];
+    video?: any;
+    tags: string[];
 }
 
 
@@ -63,6 +65,7 @@ export const PROJECTS: IProject[] = [
         cover_image: miniatura_ecommerce,
         date: new Date("2024-05-01"),
         color: "#d1965e",
+        tags: [],
         content: {
             opening: `Esta plataforma fue diseñada y desarrollada con el objetivo de ofrecer una solución 
       completa para el sector gastronómico, combinando un sistema de pedidos online accesible desde 
@@ -138,6 +141,7 @@ export const PROJECTS: IProject[] = [
             prode_1,
             prode_2,
         ],
+        tags: [],
         content: {
             opening: "Durante el Mundial de Qatar 2022, desarrollé una aplicación que combinó la emoción del fútbol con la competencia entre amigos: Prode Mundial Qatar 2022. Esta plataforma, construida con React Native, permitió a los usuarios vivir el torneo de una forma más interactiva, haciendo sus propias predicciones y compitiendo entre sí en salas privadas.",
             customers_problem: `El cliente necesitaba una plataforma digital que permitiera organizar competencias de pronósticos entre grupos cerrados de personas, de forma simple, intuitiva y sin necesidad de depender de hojas de cálculo ni canales informales de comunicación.
@@ -184,6 +188,7 @@ Todo esto en una interfaz moderna, clara y adaptable a cualquier dispositivo mó
             notificaciones1,
             notificaciones2
         ],
+        tags: [],
         content: {
             opening: `En el desarrollo moderno de aplicaciones, las notificaciones dejaron de ser un simple canal de alertas. Por eso creamos Asistente de Notificaciones, un servicio avanzado que no solo envía mensajes, sino que también permite ejecutar acciones específicas y enriquecer la experiencia del usuario directamente desde el front-end que lo utilice.
 
@@ -236,6 +241,7 @@ Sin embargo, ningún desarrollo está completo sin una buena anécdota: durante 
             fono4,
             fono5
         ],
+        tags: [],
         content: {
             opening: `El transporte inteligente necesita soluciones digitales a la altura. Por eso desarrollamos una aplicación móvil pensada para optimizar la experiencia tanto de pasajeros como de choferes, integrando reservas, pagos, escaneo de QR y visualización de vehículos en tiempo real. Todo en un solo lugar.
       Con una interfaz moderna, intuitiva y adaptada a diferentes perfiles, esta app ofrece funcionalidades potentes para facilitar la organización de viajes, mejorar la eficiencia de los servicios y brindar al usuario el control total de su experiencia, ya sea como cliente o como chofer.`,
@@ -279,5 +285,53 @@ Sin embargo, ningún desarrollo está completo sin una buena anécdota: durante 
   </ul>
 </section>`
         }
+    },
+    {
+        id: "facturador-arca",
+        title: "Automatizando la facturación electrónica: un caso de éxito con ARCA",
+        color: "blue",
+        cover_image: miniatura_fono,
+        date: new Date("2025-09-01"),
+        difficult: "high",
+        images: [],
+        tags: [],
+        type: "web",
+        video: "https://www.youtube.com/embed/WpR88OUU3MI",
+        content: {
+            opening: `La facturación electrónica se ha convertido en una parte esencial del día a día de cualquier empresa. Sin embargo, no siempre los sistemas oficiales ofrecen la mejor experiencia para los usuarios. En Argentina, muchos negocios dependen del portal de ARCA (ex AFIP) para emitir facturas, pero el proceso suele ser tedioso: múltiples formularios, datos repetidos y una interfaz poco optimizada para quienes facturan con frecuencia.
+Este fue justamente el desafío que trajo uno de mis clientes: un sistema más ágil, moderno y centralizado para gestionar toda su facturación electrónica. A continuación, te cuento cómo abordamos el problema y cuál fue la solución final que desarrollamos.
+            `,
+            customers_problem: `El cliente tenía una problemática clara:
+
+Pérdida de tiempo al tener que ingresar al portal de ARCA para cada factura.
+
+Datos repetitivos: en cada operación debía volver a cargar manualmente la información de sus clientes, incluso para los más frecuentes.
+
+Gestión complicada de múltiples puntos de venta: cada sucursal requería un manejo separado, lo que aumentaba la complejidad.
+
+Ausencia de un CRM: no existía una base centralizada de clientes que facilitara el acceso a su información o el historial de facturación.
+
+En resumen, el cliente buscaba una plataforma que le permitiera facturar con rapidez, minimizar los errores de carga manual y contar con una gestión más inteligente de sus clientes.`,
+            solution: `La propuesta fue clara: crear un sistema de facturación electrónica propio, totalmente integrado con ARCA, pero con una interfaz moderna y fácil de usar.
+
+Las principales funcionalidades que implementamos fueron:
+
+Facturación directa desde la plataforma: ya no es necesario entrar al portal de ARCA, el sistema se conecta automáticamente para autorizar los comprobantes.
+
+Plantillas de factura personalizables: cada punto de venta puede definir su logo, nombre de fantasía, dirección, teléfono y pie de página (footer en HTML).
+
+CRM integrado: ahora toda la información de los clientes se guarda en un módulo dedicado, permitiendo búsquedas rápidas y precarga automática al emitir una factura.
+
+Gestión multi–punto de venta: la solución soporta múltiples sucursales, cada una con su propia configuración de facturación.
+
+Experiencia de usuario fluida: se optimizó el buscador de clientes, se evitaron bloqueos al escribir, y se agregaron opciones de filtrado inteligente.
+
+En definitiva, el sistema resuelve los principales dolores de cabeza del cliente, ofreciendo ahorro de tiempo, reducción de errores y una experiencia mucho más eficiente.`,
+            technical_information: [{
+                title: "string",
+                text: ""
+            }]
+        }
+
     }
 ]
