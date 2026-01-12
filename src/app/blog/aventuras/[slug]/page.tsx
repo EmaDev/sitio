@@ -69,14 +69,13 @@ export default function TravelLogPage({ params }: PageProps) {
               Volver
             </Button>
           </Link>
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+          <div className="flex flex-row md:items-start md:justify-between gap-4">
             <div className="flex-1">
-              <h1 className="font-headline text-4xl md:text-6xl font-bold text-foreground">{log.title}</h1>
+              <h1 className="font-headline text-3xl md:text-6xl font-bold text-foreground">{log.title}</h1>
               <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-lg text-muted-foreground">
                 <div className="flex items-center">
                   <CalendarIcon className="mr-2 h-5 w-5" />
                   <p className="text-sm">{convertTimestampToDate(log.date)}</p>
-
                 </div>
               </div>
             </div>
@@ -103,7 +102,7 @@ export default function TravelLogPage({ params }: PageProps) {
               <Separator />
               <Card className="mt-8">
                 <CardHeader className="flex flex-row items-center justify-between">
-                  <CardTitle className="font-headline text-2xl">Trip Soundtrack</CardTitle>
+                  <CardTitle className="font-headline text-xl">Cancion de la aventura</CardTitle>
                   <Button variant="ghost" size="icon" onClick={() => setIsSpotifyExpanded(!isSpotifyExpanded)}>
                     {isSpotifyExpanded ? <Minimize2 className="h-5 w-5" /> : <Maximize2 className="h-5 w-5" />}
                     <span className="sr-only">{isSpotifyExpanded ? "Collapse" : "Expand"} Spotify Player</span>
@@ -128,7 +127,7 @@ export default function TravelLogPage({ params }: PageProps) {
 
             <div>
               <div className="flex items-center justify-between mb-4">
-                <h2 className="font-headline text-3xl">Photo Gallery</h2>
+                <h2 className="font-headline text-xl">Galeria de fotos</h2>
                 <Button variant="outline" size="icon" className="md:hidden" onClick={() => setSingleColumn(!singleColumn)}>
                   {singleColumn ? <Grid className="h-4 w-4" /> : <LayoutGrid className="h-4 w-4" />}
                   <span className="sr-only">Change Layout</span>
@@ -152,7 +151,7 @@ export default function TravelLogPage({ params }: PageProps) {
             <div className="hidden lg:block">
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between">
-                  <CardTitle className="font-headline text-2xl">Trip Soundtrack</CardTitle>
+                  <CardTitle className="font-headline text-xl">Cancion de la aventura</CardTitle>
                   <Button variant="ghost" size="icon" onClick={() => setIsSpotifyExpanded(!isSpotifyExpanded)}>
                     {isSpotifyExpanded ? <Minimize2 className="h-5 w-5" /> : <Maximize2 className="h-5 w-5" />}
                     <span className="sr-only">{isSpotifyExpanded ? "Collapse" : "Expand"} Spotify Player</span>
@@ -175,7 +174,7 @@ export default function TravelLogPage({ params }: PageProps) {
 
             <Card>
               <CardHeader>
-                <CardTitle className="font-headline text-2xl">{hasWikiloc ? "Wikiloc Route" : "Location"}</CardTitle>
+                <CardTitle className="font-headline text-xl">{hasWikiloc ? "Ruta Wikiloc" : "Ubicación"}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="relative aspect-video w-full rounded-lg">
@@ -202,23 +201,23 @@ export default function TravelLogPage({ params }: PageProps) {
                   <div className="space-y-3 text-foreground/80">
                     <div className="flex items-center gap-3">
                       <MapPin className="h-5 w-5 text-primary" />
-                      <span><strong>Distance:</strong> {log.wikiloc.distance}</span>
+                      <span><strong>Distancia:</strong> {log.wikiloc.distance}</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Clock className="h-5 w-5 text-primary" />
-                      <span><strong>Time:</strong> {log.wikiloc.time}</span>
+                      <span><strong>Tiempo:</strong> {log.wikiloc.time}</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <BarChart className="h-5 w-5 text-primary" />
-                      <span><strong>Difficulty:</strong> {log.wikiloc.difficulty}</span>
+                      <span><strong>Dificultad:</strong> {log.wikiloc.difficulty}</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <Mountain className="h-5 w-5 text-primary" />
-                      <span><strong>Elevation Gain:</strong> {log.wikiloc.elevationGain}</span>
+                      <span><strong>Elevación:</strong> {log.wikiloc.elevationGain}</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <TrendingUp className="h-5 w-5 text-primary" />
-                      <span><strong>Max Altitude:</strong> {log.wikiloc.maxAltitude}</span>
+                      <span><strong>Altitud maxima:</strong> {log.wikiloc.maxAltitude}</span>
                     </div>
                   </div>
                 )}

@@ -57,7 +57,7 @@ export default function ShareButton({ log }: { log: any }) {
     if (!pageUrl) return null;
 
     return (
-        <Button variant="outline" size="lg" onClick={handleShare}>
+        <Button variant="outline" size="sm" onClick={handleShare}>
             <Share2 className="mr-2 h-5 w-5" />
             Compartir
         </Button>
