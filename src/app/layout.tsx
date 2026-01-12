@@ -4,6 +4,7 @@ import { AppHeader } from '@/components/shared/header';
 import { AppFooter } from '@/components/shared/footer';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
+import { AnalyticsTracker } from '@/components/analytics/AnalyticsTraker';
 
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <ThemeProvider>
           <div className="flex flex-col min-h-screen">
+            <AnalyticsTracker />
             <AppHeader />
             <main className="flex-1">{children}</main>
             <AppFooter />
